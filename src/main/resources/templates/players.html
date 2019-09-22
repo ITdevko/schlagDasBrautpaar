@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--<link rel="stylesheet" type="text/css" media="all"-->
+          <!--href="../../../css/gtvg.css" th:href="@{/css/gtvg.css}" />-->
+</head>
+
+<body>
+
+<h1>Wedding Game</h1>
+
+<table>
+    <tr>
+        <th>Players</th>
+    </tr>
+    <tr th:each="player : ${players}">
+        <td th:text="${player.getName()}">Onions</td>
+    </tr>
+</table>
+
+<p>
+    <a href="../index.html" th:href="@{/}">Return to home</a>
+</p>
+
+</body>
+
+</html>
